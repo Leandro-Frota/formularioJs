@@ -6,6 +6,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+:root{
+    --bc-body: rgb(199, 213, 199);
+    --bc-form: white;
+    --fc-text: rgb(8, 168, 8);
+    --bc-button: rgb(2, 141, 11);
+
 }
 
 body{
@@ -14,7 +23,7 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(57, 57, 202);
+    background-color:var(--bc-body);
 }
 
 .form{
@@ -25,27 +34,28 @@ width: 500px;
     padding: 2rem;
     border-radius: 20px;
     border: none;
-    background-color: white;
+    background-color: var(--bc-form);
 }
 
 .title{
     font-size: 30px;
     text-align: center;
-    color: rgb(57, 57, 202);
+    color: var(--fc-text);
 }
 
 .inputName, .inputAge{
     height: 40px;
     font-size: 20px;
     border-radius: 10px;
-    border: 1px solid rgb(57, 57, 202);
+    border: 1px solid var(--fc-text);
+    padding-left: 10px;
 
 }
 
 label{
     font-size: 20px;
     font-weight: bold;
-    color: rgb(57, 57, 202);
+    color:var(--fc-text);
 }
 
 .contentName, .contentAge{
@@ -66,19 +76,49 @@ label{
     margin-bottom: 10px;
 }
 
-button{
+.check{
+   background-color: var(--fc-text);
+   width: 20px;
+   height: 20px;
+   accent-color: var(--fc-text);
+}
+
+.buttonSubmit{
     width: 100%;
     height: 50px;
     font-size: 20px;
     font-weight: bold;
     border-radius: 5px;
     border: none;
-    background-color: blue;
+    background-color: var(--bc-button);
     color: white;
     cursor: pointer;
     margin-top: 1rem;
+    text-align: center ;
 }
 
 button:hover{
-    background-color: rgb(57, 57, 202);
+    background-color: var(--fc-text);
+}
+
+.titleReturn{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: var(--bc-button);
+}
+
+.textReturn{
+    background-color: var(--bc-body);
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    height: 3rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 10px;
+
 }

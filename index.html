@@ -13,32 +13,33 @@
         <fieldset class="formFieldset">
           <h1 class="title">Formulário</h1>
         <div class="contentName">
-            <label for="name" >Nome</label>
-            <input id="name" class="inputName" type="text" required>
+            <label for="inName" >Nome</label>
+            <input id="inName" class="inputName" type="text" >
         </div>
         <div class="contentAge">
-            <label for="age">Idade</label>
-            <input id="age" class="inputAge" type="number" required>
+            <label for="inAge">Idade</label>
+            <input id="inAge" class="inputAge" type="number" >
         </div>
         <div class="contentCheck">
             <div class="checkParents">
-                <input id="parents" class="check" type="checkbox" required>
-                <label for="parents">Acompanhado pelos Pais?</label>
+                <input id="checkParents" class="check" type="checkbox" >
+                <label for="checkParents">Acompanhado pelos Pais?</label>
             </div>
             <div class="checkTicket">
-                <input id="haveCheck" class="check" type="checkbox" required>
-                <label for="haveCheck">Tem ingresso?</label>
+                <input id="checkTicket" class="check" type="checkbox" >
+                <label for="checkTicket">Tem ingresso?</label>
             </div>
             <div class="checkCovid">
-                <input id="testPositive" class="check" type="checkbox" required>
-                <label for="testPositive">Testou Positivo?</label>
+                <input id="checkTestCovid" class="check" type="checkbox" >
+                <label for="checkTestCovid">Testou Positivo?</label>
             </div>
         </div>
         <div class="button">
-            <button class="buttonSubmit">Enviar</button>
+            <input type="submit" id="send" class="buttonSubmit" value="Enviar">
         </div>
         <div class="formReturn">
-            <p class="textReturn"></p>
+            <p class="titleReturn">Reposta</p>
+            <p id="textReturn" class="textReturn"></p>
         </div>
     </fieldset>
     </form>
