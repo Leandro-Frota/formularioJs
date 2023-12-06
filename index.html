@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -10,33 +10,39 @@
 
 <body>
     <form class="form">
-        <h2 class="titleForm">Formulário</h2>
+        <fieldset class="formFieldset">
+          <h1 class="title">Formulário</h1>
         <div class="contentName">
-            <label for="name">Name</label>
-            <input id="name" type="text">
+            <label for="name" >Nome</label>
+            <input id="name" class="inputName" type="text" required>
         </div>
         <div class="contentAge">
-            <label for="idade">Idade</label>
-            <input id="idade" type="number">
+            <label for="age">Idade</label>
+            <input id="age" class="inputAge" type="number" required>
         </div>
         <div class="contentCheck">
             <div class="checkParents">
-                <input id="AcompPelosPAis" type="checkbox">
-                <label for="AcompPelosPAis">Acompanhado pelos Pais?</label>
+                <input id="parents" class="check" type="checkbox" required>
+                <label for="parents">Acompanhado pelos Pais?</label>
             </div>
             <div class="checkTicket">
-                <input id="temIngresso" type="checkbox">
-                <label for="temIngresso">Tem ingresso?</label>
+                <input id="haveCheck" class="check" type="checkbox" required>
+                <label for="haveCheck">Tem ingresso?</label>
             </div>
             <div class="checkCovid">
-                <input id="testouPositivo" type="checkbox">
-                <label for="testouPositivo">Testou Positivo?</label>
+                <input id="testPositive" class="check" type="checkbox" required>
+                <label for="testPositive">Testou Positivo?</label>
             </div>
         </div>
         <div class="button">
-            <button>Enviar</button>
+            <button class="buttonSubmit">Enviar</button>
         </div>
+        <div class="formReturn">
+            <p class="textReturn"></p>
+        </div>
+    </fieldset>
     </form>
+    
 
 </body>
 <script src="index.js"></script>

@@ -1,17 +1,9 @@
 let nome= "Leandro";
-
 let idade= 14;
 let acompanhadaPelosPais = true;
 let temIngresso=true
 let testouPositivoParaCovid=false;
 
-// if(idade>=18){
-//     console.info("Pode entrar")
-// }else if(acompanhadaPelosPais==true){
-//     console.info("Pode entrar")
-// }else{
-//     console.log("Nâo pode entrar")
-// }
 
 if((idade>=18 || acompanhadaPelosPais) && temIngresso && !testouPositivoParaCovid){
     console.info("Pode entrar")
@@ -20,4 +12,12 @@ if((idade>=18 || acompanhadaPelosPais) && temIngresso && !testouPositivoParaCovi
 }
 
 
+const frm = document.querySelector("form");
+const resp = document.querySelector("p")
 
+frm.addEventListener("buttonSubmit",(e)=>{
+    const age = Number(frm.age.value);
+    const 
+})
+
+console.info(resp)
