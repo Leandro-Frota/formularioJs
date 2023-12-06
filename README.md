@@ -17,8 +17,8 @@ Principal objetivo foi desenvolver formulário em HTML e CSS, e lógica de progr
 
 ### Links
 
-- Solution URL: []
-- Live Site URL: []
+- Solution URL: [https://github.com/Leandro-Frota/formularioJs]
+- Live Site URL: [https://leandro-frota.github.io/formularioJs/]
 
 
 ### Temas
